@@ -1,0 +1,3 @@
+[submodule "lib/wsh-shell"]
+	path = lib/wsh-shell
+	url = https://github.com/whoosh-bike/wsh-shell.git
