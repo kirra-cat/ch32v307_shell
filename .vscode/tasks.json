@@ -1,4 +1,4 @@
-﻿{
+{
     "version": "2.0.0",
     "tasks": [
         {
@@ -33,7 +33,8 @@
                 "reveal": "always",
                 "focus": false,
                 "panel": "shared",
-                "clear": true
+                "clear": true,
+                "close": true
             },
             "detail": "Clean Project"
         },
@@ -72,6 +73,25 @@
                 "clear": true
             },
             "detail": "Monitor resume"
+        },
+        {
+            "label": "Flash Project",
+            "type": "shell",
+            "command": "make flash",
+            "icon": {
+                "color": "terminal.ansiBlue",
+                "id": "rocket"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "dedicated",
+                "clear": true,
+                "close": true
+            },
+            "detail": "Flash firmware to microcontroller"
         },
         {
             "label": "Run All Tasks",

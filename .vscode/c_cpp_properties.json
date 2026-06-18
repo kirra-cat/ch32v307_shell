@@ -5,8 +5,11 @@
             "includePath": [
                 "${workspaceFolder}/device/ch32v307/core//**",
                 "${workspaceFolder}/device/ch32v307/peripheral/inc//**",
+                "${workspaceFolder}/lib/wsh-shell/src//**",
+                "${workspaceFolder}/source//**",
                 "${workspaceFolder}/source/low_level/ch32v307//**",
-                "${workspaceFolder}/source/low_level/ch32v307/debug//**"
+                "${workspaceFolder}/source/low_level/ch32v307/debug//**",
+                "${workspaceFolder}/source/shell//**"
             ],
             "defines": [],
             "intelliSenseMode": "gcc-arm",
@@ -22,8 +25,11 @@
                 "-std=gnu11",
                 "-Idevice/ch32v307/core/",
                 "-Idevice/ch32v307/peripheral/inc/",
+                "-Ilib/wsh-shell/src/",
+                "-Isource/",
                 "-Isource/low_level/ch32v307/",
                 "-Isource/low_level/ch32v307/debug/",
+                "-Isource/shell/",
                 "-fmessage-length=0",
                 "-fsigned-char",
                 "-ffunction-sections",

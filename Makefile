@@ -137,10 +137,27 @@ ifeq ($(TARGET_MICROCONTROLLER), ch32v307)
 		device/ch32v307/peripheral/src/ch32v30x_tim.c \
 		device/ch32v307/peripheral/src/ch32v30x_usart.c \
 		device/ch32v307/peripheral/src/ch32v30x_wwdg.c \
-		source/main.c \
+		lib/wsh-shell/src/wsh_shell.c \
+		lib/wsh-shell/src/wsh_shell_autocomplete.c \
+		lib/wsh-shell/src/wsh_shell_cmd.c \
+		lib/wsh-shell/src/wsh_shell_cmd_def.c \
+		lib/wsh-shell/src/wsh_shell_esc.c \
+		lib/wsh-shell/src/wsh_shell_history.c \
+		lib/wsh-shell/src/wsh_shell_interact.c \
+		lib/wsh-shell/src/wsh_shell_io.c \
+		lib/wsh-shell/src/wsh_shell_misc.c \
+		lib/wsh-shell/src/wsh_shell_promptwait.c \
+		lib/wsh-shell/src/wsh_shell_ps1_custom.c \
+		lib/wsh-shell/src/wsh_shell_str.c \
+		lib/wsh-shell/src/wsh_shell_user.c \
 		source/low_level/ch32v307/ch32v30x_it.c \
+		source/low_level/ch32v307/debug/debug.c \
 		source/low_level/ch32v307/system_ch32v30x.c \
-		source/low_level/ch32v307/debug/debug.c
+		source/main.c \
+		source/shell/shell.c \
+		source/shell/shell_cmd_led.c \
+		source/shell/shell_cmd_other.c \
+		source/shell/shell_commands.c
 endif
 
 ###############################################################################
@@ -158,8 +175,11 @@ ifeq ($(TARGET_MICROCONTROLLER), ch32v307)
 	C_INCLUDES = \
 		device/ch32v307/core/ \
 		device/ch32v307/peripheral/inc/ \
+		lib/wsh-shell/src/ \
+		source/ \
 		source/low_level/ch32v307/ \
-		source/low_level/ch32v307/debug/
+		source/low_level/ch32v307/debug/ \
+		source/shell/
 endif
 
 ###############################################################################
