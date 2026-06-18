@@ -32,13 +32,13 @@ ifeq ($(OS), Windows_NT)
 else
 	CPU_THREADS := $(shell nproc 2>/dev/null || echo 4)
 
-	GNU_TOOLCHAIN = 
-	GNU_TOOLCHAIN_GCC_PATH = 
-	GNU_TOOLCHAIN_GDB_PATH = 
-	GNU_TOOLCHAIN_SIZE_PATH = 
-	OPENOCD_PATH = 
-	OPENOCD_PATH_BIN = 
-	OPENOCD_INTERFACE_PATH = 
+	GNU_TOOLCHAIN = /opt/RISCV_Tools/CH32/RISC-V Embedded GCC15/bin
+	GNU_TOOLCHAIN_GCC_PATH =  $(GNU_TOOLCHAIN)/riscv32-wch-elf-gcc
+	GNU_TOOLCHAIN_GDB_PATH = $(GNU_TOOLCHAIN)/riscv32-wch-elf-gdb
+	GNU_TOOLCHAIN_SIZE_PATH = $(GNU_TOOLCHAIN)/riscv32-wch-elf-size
+	OPENOCD_PATH = /opt/RISCV_Tools/CH32/OpenOCD
+	OPENOCD_PATH_BIN = $(OPENOCD_PATH)/bin/openocd
+	OPENOCD_INTERFACE_PATH = $(OPENOCD_PATH)/share/openocd/scripts/interface/wch-riscv.cfg
 	OPENOCD_TARGET_PATH = 
 
 	PYTHON = python3

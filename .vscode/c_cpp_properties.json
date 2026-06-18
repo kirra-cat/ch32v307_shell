@@ -13,7 +13,7 @@
             ],
             "defines": [],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:/RISC-V/CH32/RISC-V Embedded GCC15/bin/riscv32-wch-elf-gcc.exe",
+            "compilerPath": "/opt/RISCV_Tools/CH32/RISC-V Embedded GCC15/bin/riscv32-wch-elf-gcc",
             "compilerArgs": [
                 "-march=rv32imac",
                 "-mabi=ilp32",
