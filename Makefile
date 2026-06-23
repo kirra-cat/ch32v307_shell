@@ -150,9 +150,11 @@ ifeq ($(TARGET_MICROCONTROLLER), ch32v307)
 		lib/wsh-shell/src/wsh_shell_ps1_custom.c \
 		lib/wsh-shell/src/wsh_shell_str.c \
 		lib/wsh-shell/src/wsh_shell_user.c \
-		source/low_level/ch32v307/ch32v30x_it.c \
-		source/low_level/ch32v307/debug/debug.c \
-		source/low_level/ch32v307/system_ch32v30x.c \
+		source/hardware/ch32v307/ch32v30x_init.c \
+		source/hardware/ch32v307/ch32v30x_it.c \
+		source/hardware/ch32v307/ch32v30x_syscalls.c \
+		source/hardware/ch32v307/debug/debug.c \
+		source/hardware/ch32v307/system_ch32v30x.c \
 		source/main.c \
 		source/shell/shell.c \
 		source/shell/shell_cmd_led.c \
@@ -177,8 +179,9 @@ ifeq ($(TARGET_MICROCONTROLLER), ch32v307)
 		device/ch32v307/peripheral/inc/ \
 		lib/wsh-shell/src/ \
 		source/ \
-		source/low_level/ch32v307/ \
-		source/low_level/ch32v307/debug/ \
+		source/hardware/ \
+		source/hardware/ch32v307/ \
+		source/hardware/ch32v307/debug/ \
 		source/shell/
 endif
 

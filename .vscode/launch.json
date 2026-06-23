@@ -7,14 +7,14 @@
             "executable": "build/empty_project.elf",
             "request": "launch",
             "type": "cortex-debug",
-            "gdbPath": "/opt/RISCV_Tools/CH32/RISC-V Embedded GCC15/bin/riscv32-wch-elf-gdb",
+            "gdbPath": "C:/RISC-V/CH32/RISC-V Embedded GCC15/bin/riscv32-wch-elf-gdb.exe",
             "servertype": "openocd",
             "serverArgs": [
                 "-d3"
             ],
-            "serverpath": "/opt/RISCV_Tools/CH32/OpenOCD/bin/openocd",
+            "serverpath": "C:/RISC-V/CH32/OpenOCD/bin/openocd.exe",
             "configFiles": [
-                "/opt/RISCV_Tools/CH32/OpenOCD/share/openocd/scripts/interface/wch-riscv.cfg"
+                "C:/RISC-V/CH32/OpenOCD/share/openocd/scripts/interface/wch-riscv.cfg"
             ],
             "svdFile": "device/ch32v307/svd/CH32V307xx.svd",
             "liveWatch": {
